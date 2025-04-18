@@ -4,6 +4,17 @@ body {
   padding: 0;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+  color: inherit;
+  font-style: normal;
+  border: none;
+  box-sizing: border-box;
+}
+
 @font-face {
   font-family: OpenSans;
   src: url("../fonts/OpenSans-Regular.woff2") format("woff2"),
@@ -978,8 +989,7 @@ a {
 
   .header-logo {
     width: 270px;
-    /* margin-top: 187px;
-    margin-left: 30px; */
+    margin-top: 225px;
   }
 
   .menu {
@@ -995,6 +1005,9 @@ a {
     /* position: relative;
     border: none;
     background: transparent; */
+    position: absolute;
+    right: 15px;
+    top: 30px;
     background-image: url("../svg/burger-icon.svg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -1037,6 +1050,7 @@ a {
   .header-description {
     width: 360px;
     margin-top: 30px;
+    margin-bottom: 215px;
   }
 
   .heading {
@@ -1053,13 +1067,16 @@ a {
     max-width: 360px;
   }
 
-  .wrp-trend {
-    outline-offset: 25px;
-    margin: 2px;
+  .wrp-trends {
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  .menu-post {
-    margin-bottom: 20px;
+  .wrp-trend {
+    outline: none;
+    border: 3px solid #b59f5b;
+    padding: 30px 20px;
+    margin: 0;
   }
 
   .trends-title {
@@ -1070,13 +1087,9 @@ a {
     margin-top: 37px;
   }
 
-  .wrp-trends {
-    display: flex;
-    flex-direction: column;
-  }
-
   .trend {
-    height: 160px;
+    width: 100%;
+    padding: 88px 15px 15px;
   }
 
   .trend:nth-child(1n+1) {
@@ -1108,8 +1121,7 @@ a {
   }
 
   .menu-post {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .last-post-header {
