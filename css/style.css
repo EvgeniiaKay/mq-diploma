@@ -733,11 +733,12 @@ a {
 
 @media (max-width: 1199px) and (min-width: 641px) {
   .header {
-    padding-bottom: 110px;
+    padding-bottom: 114px;
   }
 
   .menu {
     padding-left: 34px;
+    justify-content: normal;
   }
 
   .header-logo {
@@ -749,6 +750,21 @@ a {
   }
 
   .menu-burger {
+    position: absolute;
+    right: 32px;
+    top: 46px;
+    background-image: url("../svg/burger-icon.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+
+  /* .menu-burger {
     width: 23px;
     height: 19px;
     position: relative;
@@ -787,7 +803,7 @@ a {
 
   .menu-burger::before {
     box-shadow: 0 7px 0 #ffffff;
-  }
+  } */
 
   .header-description {
     margin: 87px auto 0;
@@ -804,7 +820,7 @@ a {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     gap: 4px;
-    margin-top: 18px;
+    margin-top: 21px;
   }
 
   .trends {
@@ -815,23 +831,25 @@ a {
     font-size: 18px;
   }
 
-  .trend {
+  /* .trend {
     height: 180px;
-  }
+  } */
 
   .trend-title {
     font-size: 17px;
   }
 
   .wrp-main {
-    max-width: 698px;
-    padding-left: 35px;
-    padding-right: 35px;
-    margin-top: 50px;
+    width: 698px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 39px;
   }
 
   .content {
     flex-wrap: nowrap;
+    justify-content: normal;
+    gap: 36px;
   }
 
   .content-news {
@@ -840,7 +858,7 @@ a {
 
   .article {
     flex-direction: column;
-    margin-bottom: 40px;
+    margin-bottom: 37px;
   }
 
   .article::after {
@@ -875,11 +893,11 @@ a {
   }
 
   .post-description {
-    margin-top: 10px;
+    margin-top: 24px;
   }
 
   .post-description-text {
-    font-size: 17px;
+    font-size: 17.5px;
   }
 
   .post-description-text-down {
@@ -981,15 +999,17 @@ a {
   .header {
     /* max-width: 360px;
     padding-bottom: 210px; */
+    width: 360px;
     display: block;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 16px;
+    padding: 10px 22px;
   }
 
   .header-logo {
     width: 270px;
-    margin-top: 225px;
+    margin-top: 215px;
+    margin-left: 9px;
   }
 
   .menu {
@@ -1050,7 +1070,7 @@ a {
   .header-description {
     width: 360px;
     margin-top: 30px;
-    margin-bottom: 215px;
+    margin-bottom: 200px;
   }
 
   .heading {
@@ -1064,7 +1084,7 @@ a {
   }
 
   .trends {
-    max-width: 360px;
+    width: 360px;
   }
 
   .wrp-trends {
@@ -1076,7 +1096,7 @@ a {
     outline: none;
     border: 3px solid #b59f5b;
     padding: 30px 20px;
-    margin: 0;
+    margin: 26px 0 0;
   }
 
   .trends-title {
@@ -1088,12 +1108,13 @@ a {
   }
 
   .trend {
+    height: 230px;
     width: 100%;
     padding: 88px 15px 15px;
   }
 
   .trend:nth-child(1n+1) {
-    margin-bottom: 3px;
+    margin-bottom: 4px;
   }
 
   .trend-title {
@@ -1101,8 +1122,8 @@ a {
   }
 
   .wrp-main {
-    max-width: 360px;
-    margin: 50px 0 0;
+    width: 360px;
+    margin: 37px 0 0;
   }
 
   .content {
@@ -1114,6 +1135,7 @@ a {
     flex-direction: column;
     align-items: normal;
     width: 360px;
+    margin-bottom: 55px;
   }
 
   .post-image {
@@ -1122,11 +1144,18 @@ a {
 
   .menu-post {
     margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 13.6px;
   }
 
   .last-post-header {
-    margin-top: -18px;
+    margin-top: -8px;
     line-height: 1.0;
+  }
+
+  .h-title {
+    box-sizing: border-box;
+    width: 330px;
   }
 
   .article-title {
@@ -1134,28 +1163,129 @@ a {
   }
 
   .post-description {
-    line-height: 1.0;
-    margin-top: 5px;
+    margin-top: 12px;
   }
 
   .post-description-text {
-    font-size: 14px;
+    font-size: 15px;
     text-align: start;
   }
 
+  .post-description-text-down {
+    margin-top: 20px;
+  }
 
+  .sidebar {
+    width: 360px;
+    margin-top: 7px;
+  }
+
+  .section-title {
+    margin-left: -32px;
+    font-size: 16px;
+    margin-bottom: 26px;
+  }
+
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 66px;
+    margin: 0 auto;
+    border-bottom: 3px solid #e1d9bd;
+    margin-top: -5px;
+  }
+
+  /* .section-new-post:nth-child(1) {
+    margin-top: 26px;
+  } */
+
+  .section-new-post {
+    margin-top: 0;
+    margin-bottom: 23px;
+  }
+
+  .subject-first {
+    margin-top: 6px;
+  }
+
+  .search-form {
+    width: 283px;
+  }
+
+  .search-form__txt {
+    width: 100%;
+  }
+
+  .search-form__btn {
+    height: 48px;
+    width: 48px;
+  }
+
+  .section-field {
+    margin-top: 35px;
+  }
+
+  .forms {
+    width: 330px;
+  }
+
+  .mail-form {
+    display: block;
+  }
+
+  .button {
+    display: block;
+    margin-top: 14px;
+  }
+
+  .section-tag {
+    margin-top: 37px;
+  }
+
+  .section-themes {
+    margin-top: 44px;
+  }
+
+  .section-items {
+    margin-top: -11px;
+  }
 
   .cards {
-    max-width: 360px;
+    width: 360px;
+    margin-top: 44px;
   }
 
   .wrp-cards {
     flex-direction: column;
+    justify-content: normal;
+    gap: 50px;
+    padding: 0 37px;
   }
 
+  .card {
+    width: 281px;
+  }
+
+  .card-img {
+    height: 285px;
+    object-fit: cover;
+  }
+
+  .worth {
+    margin-top: -5px;
+  }
+
+  .worth-second {
+    margin-top: 15px;
+  }
 
   .wrp-footer {
-    max-width: 360px;
+    width: 360px;
+    margin: 67px auto 40px;
+  }
+
+  .tip {
+    margin-top: 49px;
   }
 }
 
